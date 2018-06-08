@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/loading"
+            />
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@color/graydark"
+            android:text="正在刷新..."
+            android:gravity="center"
+            android:minEms="6"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/graydark"
+        android:text="上次加载时间：没加载过"
+        android:gravity="center"
+        android:minEms="6"
+        />
+
+</LinearLayout>
